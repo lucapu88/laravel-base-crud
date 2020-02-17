@@ -68,8 +68,9 @@ class PhoneController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id)
+    public function destroy(Phone $phone)
     {
-        //
+        $phone->delete();
+        return redirect()->route('phones.index');
     }
 }
