@@ -40,9 +40,9 @@ class PhoneController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show(Phone $phone)
     {
-        $phone = Phone::find($id);
+        //$phone = Phone::find($id); //per utilizzarlo bisogna aggiungere $id tra parentesi del show al posto di 'Phone $phone'
         return view('phones.show', ['phone'=> $phone]);
     }
 
@@ -50,17 +50,19 @@ class PhoneController extends Controller
      * Show the form for editing the specified resource.
 
      */
-    public function edit($id)
+    public function edit(Phone $phone)
     {
-        //
+        return view('phones.edit', ['phone'=> $phone]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Phone $phone)
     {
-        //
+        $form_data = $request->all();
+        $phone->update($form_data);
+        return redirect()->route('phones.index');
     }
 
     /**

@@ -5,11 +5,11 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link" href="{{route('phones.index')}}">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('phones.create')}}">Inserisci- Nuovo-Smartphone</a>
+        <a class="nav-link" href="{{route('phones.create')}}">Inserisci- Nuovo</a>
       </li>
       {{-- <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>
