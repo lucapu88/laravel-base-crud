@@ -11,9 +11,9 @@
       <li class="nav-item">
         <a class="nav-link" href="{{route('phones.create')}}">Inserisci- Nuovo-Smartphone</a>
       </li>
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>
-      </li>
+      </li> --}}
     </ul>
   </div>
 </nav>

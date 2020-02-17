@@ -21,6 +21,7 @@
               <td>{{$phone->name}}</td>
               <td>{{$phone->color}}</td>
               <td>{{$phone->price}}</td>
+              <td><a class="btn btn-outline-primary" href="{{route('phones.show', ['phone' => $phone->id])}}">Visualizza Dettagli</a></td>
             </tr>
           @empty
             <tr>
