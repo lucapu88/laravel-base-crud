@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'index phones')
+@section('title', 'home phones')
 @section('content')
   <div class="container">
     <div class="row">
@@ -11,7 +11,7 @@
               <th>ID</th>
               <th>Nome</th>
               <th>Colore</th>
-              <th>Prezzo</th>
+              <th>Prezzo €</th>
               <th>Azioni</th>
             </tr>
           </thead>

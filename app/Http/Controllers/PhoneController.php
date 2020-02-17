@@ -42,7 +42,8 @@ class PhoneController extends Controller
      */
     public function show($id)
     {
-        //
+        $phone = Phone::where('id', $id)->first();
+        return view('phones.show', ['phone'=> $phone]);
     }
 
     /**

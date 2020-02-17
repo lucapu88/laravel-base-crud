@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'index phones')
+@section('title', 'new phone')
 @section('content')
   <div class="container">
     <div class="row">
