@@ -30,7 +30,11 @@ class PhoneController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $form_data = $request->all();
+        $phone = new Phone();
+        $phone->fill($form_data);
+        $phone->save();
+        return redirect()->route('phones.index');
     }
 
     /**
