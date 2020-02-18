@@ -55,6 +55,12 @@ class PhoneController extends Controller
         return view('phones.edit', ['phone'=> $phone]);
     }
 
+    public function confirm(Phone $phone)
+    {
+        return view('phones.confirm', ['phone'=> $phone]);
+    }
+
+
     /**
      * Update the specified resource in storage.
      */

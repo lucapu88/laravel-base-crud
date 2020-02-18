@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 21rem;">
           <div class="card-body">
             <h2 class="card-title">{{$phone->name}}</h2>
             <h6 class="card-subtitle mb-2 text-muted">Phone ID: {{$phone->id}}</h6>

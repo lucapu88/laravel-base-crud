@@ -24,11 +24,12 @@
               <td>
                 <a class="btn btn-outline-primary" href="{{route('phones.show', ['phone' => $phone->id])}}">Visualizza Dettagli</a>
                 <a class="btn btn-outline-warning" href="{{route('phones.edit', ['phone' => $phone->id])}}">Modifica</a>
-                <form class="delete" action="{{route('phones.destroy', ['phone' => $phone->id])}}" method="post">
+                <a class="btn btn-outline-danger" href="{{route('phones.confirm', ['phone' => $phone->id])}}">Elimina</a>
+                {{-- <form class="delete" action="{{route('phones.destroy', ['phone' => $phone->id])}}" method="post">
                   @csrf
                   @method('DELETE')
                   <input type="submit" class="btn btn-outline-danger" value="Elimina">
-                </form>
+                </form> --}}
               </td>
             </tr>
           @empty
